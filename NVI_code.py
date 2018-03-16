@@ -6,12 +6,21 @@ GPIO.setmode(GPIO.BCM)
 
 TRIG = 4
 ECHO = 17
+##
+
+##
 
 motor1 = 14
+##
+
+##
 
 GPIO.setup(motor1,GPIO.OUT)
 GPIO.setup(TRIG,GPIO.OUT)
 GPIO.setup(ECHO,GPIO.IN)
+##
+
+##
 
 tts = gTTS(text='Turn right', lang='en')
 tts.save("right.mp3")
