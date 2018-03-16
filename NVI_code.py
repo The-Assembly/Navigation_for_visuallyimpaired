@@ -6,24 +6,12 @@ GPIO.setmode(GPIO.BCM)
 
 TRIG = 4
 ECHO = 17
-TRIG2 = 24
-ECHO2 =23
-TRIG3 = 5
-ECHO3 = 25
 
 motor1 = 14
-motor2 = 15
-motor3 = 26
-GPIO.setmode(GPIO.BCM)
+
 GPIO.setup(motor1,GPIO.OUT)
 GPIO.setup(TRIG,GPIO.OUT)
 GPIO.setup(ECHO,GPIO.IN)
-GPIO.setup(motor2,GPIO.OUT)
-GPIO.setup(TRIG2,GPIO.OUT)
-GPIO.setup(ECHO2,GPIO.IN)
-GPIO.setup(motor3,GPIO.OUT)
-GPIO.setup(TRIG3,GPIO.OUT)
-GPIO.setup(ECHO3,GPIO.IN)
 
 tts = gTTS(text='Turn right', lang='en')
 tts.save("right.mp3")
